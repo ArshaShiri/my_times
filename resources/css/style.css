@@ -1,51 +1,134 @@
-* {
+*{
 
 }
 
-/* Header*/
+/*********************************************** Header **********************************************************/
 header {
     display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+    background-color: white;
     font-family: Verdana;
     font-size: 14px;
     font-weight: bold;
-    border-bottom: 1px solid black;
-    background-color: white;
-    padding-bottom: 5px;
-    align-items: center;
+    margin-top: -8px;
 }
 
 .logo {    
-    padding-left: 30px;
-    color: MediumAquamarine;
-    display: flex;  
+    display: flex;
     align-items: center;
     flex-grow: 1;
+    padding-left: 30px;
 }
 
-.logo h3 {
-    margin-left: 5px;
+.logo img{
+    width: 70px;
+    height: 60px;
+    margin-right: 12px;
 }
 
-nav li {
+.logo span {
+    color: MediumAquamarine;
+}
+
+header nav{
+    padding-right: 40px;
+}
+
+
+nav span {
     display: inline-block;
+    padding: 20px 10px;
     color: black;
-    padding: 5px 10px;
 }
 
 a:visited{
     color: black;
 }
 
-/* End of header */
+/*********************************************** End of Header **********************************************************/
 
 
 
+/*********************************************** Content **********************************************************/
+
+.content {
+    display: flex;
+    width: 1232px;
+    margin: 0 auto 78px auto;
+    padding-top: 116px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+}
+
+.column.large {
+    width: 630px;
+}
+
+.column.medium {
+    width: 300px;
+}
+
+.column.small {
+    width: 240px;
+}
+
+div {
+    border: 1px solid black;
+    display: block;
+}
 
 
+/*********************************************** End of Content **********************************************************/
+
+
+.image-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+
+.lead-story .image-content{
+    margin-top: 0;
+    font-size: 40px;
+    text-align: left;
+    background-image: url(../images/img-story-main.png)
+}
+
+.fall-cancelled.image-content {
+    background-image: url(../images/img-story-2.png);
+}
+
+.pop-culture.image-content{
+    background-image: url(../images/img-story-3.png);
+}
+
+.cat-ceo.image-content{
+   background-image: url(../images/img-story-1.png); 
+}
 
 
 
 /*
+
+
+
 .top{
     background-image: url("../images/the-flatiron-building.png");
     color: white;
